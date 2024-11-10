@@ -82,7 +82,6 @@ input {
 /* header */
 
 .header {
-   padding: 16px 0;
    background-color: #fff;
    border-bottom: 1px solid #e7e9fc;
    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
@@ -126,6 +125,7 @@ input {
 
 .mob-menu {
    width: 100%;
+   min-width: 320px;
    height: 100%;
    position: fixed;
    top: 0;
@@ -258,7 +258,7 @@ input {
 
 @media screen and (max-width: 767px) {
    .header {
-      min-height: 56px;
+      padding: 16px 0;
    }
 
    .header-list {
@@ -272,9 +272,6 @@ input {
 }
 
 @media screen and (min-width: 768px) {
-   .header {
-      min-height: 72px;
-   }
 
    .header-menu {
       display: flex;
@@ -355,9 +352,6 @@ input {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-   .header {
-      padding: 16px 0;
-   }
 
    .header-logo {
       margin-right: 120px;
@@ -379,9 +373,6 @@ input {
 }
 
 @media screen and (min-width: 1158px) {
-   .header {
-      padding: 24px 0;
-   }
 
    .header-logo {
       margin-right: 76px;
@@ -1074,7 +1065,7 @@ input {
    pointer-events: none;
    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   overflow: scroll;
+   overflow: auto;
 }
 
 .modal-overlay.is-open {
