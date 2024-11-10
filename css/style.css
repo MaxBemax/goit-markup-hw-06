@@ -125,7 +125,6 @@ input {
 
 .mob-menu {
    width: 100%;
-   min-width: 320px;
    height: 100%;
    position: fixed;
    top: 0;
